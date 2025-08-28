@@ -3,9 +3,32 @@ const btnRegister = document.querySelector("#btn-register");
 const modalLogin = document.querySelector("#modal-login");
 const modalRegister = document.querySelector("#modal-register");
 const btnCancelLogin =document.querySelector("#btn-cancel-login");
-const btnCancelRegister =document.querySelector("#btn-cancel-Register");
+const btnCancelRegister =document.querySelector("#btn-cancel-register");
+
+function soma(num01, num02) {
+    const somar = num01 + num02;
+    console.log(somar); 
+}
+
+soma(8, 6)
+
+// arrow function
+const multiplicar = (num01, num02) => {
+    return num01 * num02
+}
+
+console.log(multiplicar(5, 8.9));
 
 
+const subtrair = (num01, num02) => {
+    return num01 - num02
+}
+console.log(subtrair(7, 9-4));
+
+
+
+// addEventLister => Escuta o evento de click
+// e executa a função
 btnLogin.addEventListener("click", (e) => {
    modalLogin.classList.remove("hide-modal");
    modalLogin.classList.add("show-modal");
