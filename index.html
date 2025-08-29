@@ -17,16 +17,23 @@
       <div class="content-modal-login">
         <h1>modal login</h1>
         <form action="form-login">
-          <div class="content-form" id="content-form"></div>
-          <div class="input" id="input"></div>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            class="email"
-            placeholder="Email"
-          />
+          <div class="content-form" id="content-form">
+            <div class="input" id="input">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="email"
+                placeholder="Email"
+              />
+            </div>
+            <footer class="btn-group">
+              <button class="btn-login-open" id="-btn-login-open"></button>
+              <button class="btn-login-open" id="btn-login-open"></button>
+            </footer>
+          </div>
         </form>
+        <div id="resultado"></div>
         <button id="btn-cancel-login">cancelar</button>
       </div>
     </div>
