@@ -2,59 +2,61 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
-    background: darkred
-}
-
-
-.container {
+  }
+  
+  body {
+    background: rgb(12, 153, 196);
+  }
+  
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100;
+    width: 100%;
     height: 100vh;
     gap: 2rem;
-}
-
-button {
+  }
+  
+  button {
     padding: 1rem 2rem;
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
     border: none;
     border-radius: 0.5rem;
-    background-color: rgb(34, 91, 246);
+    background: rgb(156, 96, 23);
     cursor: pointer;
+    color: rgb(255, 255, 255);
     transition: all 350ms ease-in-out;
-}
-
-button:hover{
-    background-color: darkblue;
-    color:black;
-}
-
-/* **************************************
-Criando estilo da modal login e cadastro
-*****************************************/
-
-.content-modal-login, .content-modal-register{
-    background: rgb rgb(201, 25, 25);
+  }
+  
+  button:hover {
+    background: rgb(247, 151, 33);
+    color: rgb(0, 0, 0);
+  }
+  
+  /* **************************************
+  Criando estilo da modal login e cadastro
+  ***************************************** */
+  
+  .content-modal-login,
+  .content-modal-register {
+    background: rgb(255, 255, 255);
     padding: 2rem;
     border-radius: 0.5rem;
-}
-
-.hide-modal{
+  }
+  
+  .hide-modal {
     opacity: 0;
     visibility: hidden;
-}
-
-.show-modal{
+  }
+  
+  .show-modal {
     opacity: 1;
     visibility: visible;
-}
-
-.modal-login, .modal-register{
+  }
+  
+  .modal-login,
+  .modal-register {
     position: fixed;
     top: 0;
     left: 0;
@@ -63,41 +65,51 @@ Criando estilo da modal login e cadastro
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 6, 6, 0.702)
+    background: rgba(0, 0, 0, 0.702);
     transition: all 350ms ease-in-out;
-}
-/***********************************************************************
-     Estilo dos botões
-************************************************************************/
-
-
-.btn-login-open{
-    border: 0.3rem solid rgb rgb(247, 90, 90);
-    background-color: rgb(129, 196, 255);
-    color: rgb rgb(134, 43, 219);
-}
-.btn-login-open:hover {
-    background: rgba(255, 6, 6, 0.702);
-    color: rgb black
-}
-
-/******************************************
-     Estilo do form e input
-********************************************/
-
-    .content-form{
-        display:flex
-        ?
-        ?
-        ?
-    }
-
-.input input {
+  }
+  
+  /* *****************************************
+      Estilo dos botões
+  ******************************************** */
+  
+  .btn-login-open {
+    border: 0.3rem solid rgb(12, 153, 196);
+    background: rgb(255, 255, 255);
+    color: rgb(12, 153, 196);
+  }
+  
+  .btn-login-open:hover {
+    background: rgb(12, 153, 196);
+    color: rgb(255, 255, 255);
+  }
+  
+  /* ************************************
+      Estilo do form e input
+  ************************************** */
+  
+  .content-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .input {
+    padding: 1rem 0;
+  }
+  
+  .input input {
     outline: none;
     border: none;
     background: transparent;
     padding: 0.5rem;
     font-size: 1.5rem;
     width: 100%;
-    border-bottom: 0.5rem solid rgb(3, 3, 254);
-}
+    border-bottom: 0.5rem solid rgb(12, 153, 196);
+  }
+  .resultado_calcular{
+    padding: 1rem 0;
+    font-size: 2rem;
+    text-align: center;
+    font: bold;
+  }
